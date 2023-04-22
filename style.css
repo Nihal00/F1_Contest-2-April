@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --color-yellow: #fcaf02;
+    --color-backgorund: #000;
+    --color-white: #FFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--color-backgorund);
+    
+}
+
+
+/* Nav bar section */
+.nav-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px 15px;
+    background-color: var(--color-yellow);
+    position: sticky;
+    top: 0;
+}
+
+span{
+    border-bottom: 2px solid var(--color-backgorund);
+}
+.nav-bar{
+    padding-right: 20px;
+}
+
+.nav-bar ul li {
+    display: inline;
+    padding-left: 30px;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-backgorund);
+}
+
+/* Intro section */
+
+.intro-section {
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-white);
+    padding: 40px;
+}
+
+.left-container {
+    width: 50%;
+    line-height: 20px;
+}
+.left-container h1 {
+    padding: 15px 0;
+}
+.btn-submit{
+    margin-top: 20px;
+    padding: 8px 40px;
+    border-radius: 40px;
+    border: none;
+    background-color: var(--color-yellow);
+    font-weight: bold;
+    cursor: pointer;
+}
+img{
+    width: auto;
+    height: 250px;
+}
+
+
+/* Contact us */
+.contact-us {
+    padding: 40px;
+    align-items: center;
+}
+
+.contact-us h2{
+    color: var(--color-yellow);
+    padding-bottom: 30px;
+}
+
+input{
+    border: none;
+}
+
+input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: var(--color-yellow);
+    padding-left: 15px;
+}
+
+.name-email{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    border: 1px solid var(--color-yellow);
+    background-color: var(--color-backgorund);
+    color: var(--color-white);
+}
+
+.mobile-no{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-city{
+    width: 48%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid var(--color-yellow);
+    background-color: var(--color-backgorund);
+    color: var(--color-white);
+}
+
+.btn{
+    text-align: center;
+}
+.btn-form{
+    padding: 8px 20px;
+    margin-top: 30px;
+}
+
+
+/* table section */
+.table-section{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+table{
+    width: 100%;
+}
+thead, tbody, tr, th td{
+    color: var(--color-yellow);
+}
+
+td, th{
+    padding: 15px;
+    text-align: left;
+    padding-left: 30px;
+}
+
+th{
+    font-weight: 500;
+}
+
+.row-1{
+    text-align: center;
+    padding: 0;
+}
+
+table, th, tfoot{
+    border: 1px solid var(--color-yellow);
+    border-collapse: collapse;
+}
+table td + td {
+    border-left: 1px solid var(--color-yellow);
+}
+
+tfoot td{
+    background-color: var(--color-yellow);
+    color: var(--color-backgorund);
+}
+
+table tfoot td + td {
+    border-left: 1px solid var(--color-backgorund);
+}
